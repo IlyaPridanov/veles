@@ -1,0 +1,23 @@
+section.main-slider.slider
+    .container.container--main-slider
+        h2.visually-hidden Главный слайдер
+        .main-slider__container.swiper-container
+            ul.main-slider__wrapper.swiper-wrapper
+                li.main-slider__item.swiper-slide
+                    article.main-slider__slide
+                        p.main-slider__new Новое
+                        p.main-slider__caption Подводный отель
+                        p.main-slider__text
+                            |Как известно, Дубай – город контрастов. Самые революционные
+                            |и&nbsp;фантастические мечты архитекторов способен воплотить в жизнь
+                            |этот мегаполис, построенный на нефти и за счет нефти
+        .main-slider__btn-block
+            button(class="slider-btn__btn js-btn-prev" type="button")
+                svg(width="27" height="27")
+                    use(xlink:href="#icon-triangle")
+            button(class="slider-btn__btn js-btn-next" type="button")
+                svg(width="27" height="27")
+                    use(xlink:href="#icon-triangle")
+        .main-slider__prev-next-block
+            span Предыдущая
+            span Следующая

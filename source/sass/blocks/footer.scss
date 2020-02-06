@@ -1,0 +1,24 @@
+.footer__caption {
+    margin: 0;
+
+    font-family: $playfairdisplay;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.34;
+    letter-spacing: 1px;
+    color: $black;
+    text-align: center;
+}
+
+.footer__text-block {
+    border-top: 1px solid $black-light-opacity;
+}
+
+.footer__text {
+    font-family: $avenirnext;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.5;
+    color: $black-light-opacity;
+    text-align: right;
+}

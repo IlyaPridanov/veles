@@ -1,0 +1,36 @@
+block variables
+include mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(name="description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+        title #{page.title}
+        link(rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous")
+        link(rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous")
+        link(rel="preload" href="fonts/Montserrat-Italic.woff2" as="font" crossorigin="anonymous")
+        link(rel="preload" href="fonts/CormorantGaramond-Regular.woff2" as="font" crossorigin="anonymous")
+        link(rel="preload" href="fonts/CormorantGaramond-Medium.woff2" as="font" crossorigin="anonymous")
+        link(rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font" crossorigin="anonymous")
+        link(rel="preload" href="fonts/Ahellya-Regular.woff2" as="font" crossorigin="anonymous")
+        link(rel="stylesheet" href="css/style.min.css")
+
+    body
+        <div style="display:none"><include src="build/img/icons/sprite.svg"></include></div>
+
+        include header.pug
+        main.site-main(class=page.mainClass)
+            block content
+        include footer.pug
+        .popup-opacity-block.hidden
+            include blocks/form-join.pug
+        .popup-search-form.hidden
+            include blocks/form-search.pug
+
+        .modal-overlay.js_modal_overlay
+        include blocks/main-nav-modals.pug
+        include blocks/competition-modal.pug
+
+        script(src='js/script.min.js')

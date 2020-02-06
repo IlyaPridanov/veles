@@ -1,0 +1,17 @@
+.container {
+    margin: 0 auto;
+    padding: 0 14px;
+    width: 1200px;
+    max-width: 100%;
+
+    &--main-slider {
+        padding: 0;
+        width: 1440px;
+    }
+}
+
+@media(max-width:$tablet-width) {
+    .container--padding-mobile-off {
+        padding: 0;
+    }
+}

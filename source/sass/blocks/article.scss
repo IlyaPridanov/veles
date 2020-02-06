@@ -1,0 +1,81 @@
+.article {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.article__link {
+    display: block;
+
+    text-decoration: none;
+
+    margin-bottom: 33px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.article__caption {
+    margin: 0;
+
+    font-family: $playfairdisplay;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $black;
+
+    &--white {
+        color: $white;
+    }
+
+    &--ballet {
+        margin-right: 47px;
+
+        font-family: $raleway;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1.17;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $white;
+    }
+}
+
+.article__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 48px 0 30px 0;
+
+    min-height: 479px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &--ball {
+        background-image: url("../img/preview-1.jpg");
+    }
+
+    &--photo {
+        background-image: url("../img/preview-2.jpg");
+    }
+
+    &--bird {
+        background-image: url("../img/preview-3.jpg");
+    }
+
+    &--ballet {
+        flex-direction: row;
+        justify-content: center;
+        min-height: 176px;
+
+        background-image: url("../img/preview-4.jpg");
+        background-position-y: bottom;
+    }
+}
