@@ -1,4 +1,5 @@
 .slider-news {
+    margin-top: 48px;
     position: relative;
     grid-column: 1/3;
     grid-row: 2/3;
@@ -109,3 +110,13 @@
     }
 }
 
+@media(max-width:1250px) {
+    .slider-news__btn-slide {
+        left: 0;
+
+        &:last-child {
+            left: auto;
+            right: 0;
+        }
+    }
+}

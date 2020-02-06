@@ -1,5 +1,10 @@
+.footer {
+    margin-top: 124px;
+}
+
 .footer__caption {
     margin: 0;
+    margin-bottom: 34px;
 
     font-family: $playfairdisplay;
     font-weight: 900;
@@ -11,14 +16,34 @@
 }
 
 .footer__text-block {
+    margin-top: 44px;
     border-top: 1px solid $black-light-opacity;
 }
 
 .footer__text {
+    margin: 7px 0;
+
     font-family: $avenirnext;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.5;
     color: $black-light-opacity;
     text-align: right;
+}
+
+@media(max-width:1000px) {
+    .footer {
+        margin-top: 25px;
+        & nav {
+            display: none;
+        }
+    }
+
+    .footer__caption {
+        display: none;
+    }
+
+    .footer__text {
+        text-align: center;
+    }
 }
