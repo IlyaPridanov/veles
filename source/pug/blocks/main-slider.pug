@@ -5,19 +5,30 @@ section.main-slider.slider
             ul.main-slider__wrapper.swiper-wrapper
                 li.main-slider__item.swiper-slide
                     article.main-slider__slide
+                        h3.visually-hidden Заголовок слайда
                         p.main-slider__new Новое
                         p.main-slider__caption Подводный отель
                         p.main-slider__text
                             |Как известно, Дубай – город контрастов. Самые революционные
-                            |и&nbsp;фантастические мечты архитекторов способен воплотить в жизнь
+                            |и&nbsp;фантастические&nbsp;мечты&nbsp;архитекторов способен воплотить в жизнь
+                            |этот мегаполис, построенный на нефти и за счет нефти
+                li.main-slider__item.swiper-slide
+                    article.main-slider__slide
+                        h3.visually-hidden Заголовок слайда
+                        p.main-slider__new Новое
+                        p.main-slider__caption Подводный отель
+                        p.main-slider__text
+                            |Как известно, Дубай – город контрастов. Самые революционные
+                            |и&nbsp;фантастические&nbsp;мечты&nbsp;архитекторов способен воплотить в жизнь
                             |этот мегаполис, построенный на нефти и за счет нефти
         .main-slider__btn-block
-            button(class="slider-btn__btn js-btn-prev" type="button")
+            button(class="main-slider__btn js-btn-prev" type="button")
                 svg(width="27" height="27")
                     use(xlink:href="#icon-triangle")
-            button(class="slider-btn__btn js-btn-next" type="button")
+            button(class="main-slider__btn js-btn-next" type="button")
                 svg(width="27" height="27")
                     use(xlink:href="#icon-triangle")
         .main-slider__prev-next-block
             span Предыдущая
             span Следующая
+        .main-slider__pagination.swiper-pagination

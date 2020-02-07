@@ -69,11 +69,10 @@
                 </svg></a></li>
           </ul>
         </nav>
-        <button class="header__btn hamburger" type="button"><span class="hamburger__bar hamburger__bar--bar1"></span><span class="hamburger__bar hamburger__bar--bar2"></span><span class="hamburger__bar hamburger__bar--bar3"></span><span class="hamburger__bar hamburger__bar--bar4"></span></button>
+        <button class="header__btn" type="button" aria-label="Кнопка открывающая мобильное меню"><span class="hamburger"><span class="hamburger__bar hamburger__bar--bar1"></span><span class="hamburger__bar hamburger__bar--bar2"></span><span class="hamburger__bar hamburger__bar--bar3"></span><span class="hamburger__bar hamburger__bar--bar4"></span></span></button>
       </div>
     </header>
     <main>
-      <h1 class="visually-hidden">Veles</h1>
       <section class="main-slider slider">
         <div class="container container--main-slider">
           <h2 class="visually-hidden">Главный слайдер</h2>
@@ -81,11 +80,24 @@
             <ul class="main-slider__wrapper swiper-wrapper">
               <li class="main-slider__item swiper-slide">
                 <article class="main-slider__slide">
+                  <h3 class="visually-hidden">Заголовок слайда</h3>
                   <p class="main-slider__new">Новое</p>
                   <p class="main-slider__caption">Подводный отель</p>
                   <p class="main-slider__text">
                     Как известно, Дубай – город контрастов. Самые революционные
-                    и&nbsp;фантастические мечты архитекторов способен воплотить в жизнь
+                    и&nbsp;фантастические&nbsp;мечты&nbsp;архитекторов способен воплотить в жизнь
+                    этот мегаполис, построенный на нефти и за счет нефти
+                  </p>
+                </article>
+              </li>
+              <li class="main-slider__item swiper-slide">
+                <article class="main-slider__slide">
+                  <h3 class="visually-hidden">Заголовок слайда</h3>
+                  <p class="main-slider__new">Новое</p>
+                  <p class="main-slider__caption">Подводный отель</p>
+                  <p class="main-slider__text">
+                    Как известно, Дубай – город контрастов. Самые революционные
+                    и&nbsp;фантастические&nbsp;мечты&nbsp;архитекторов способен воплотить в жизнь
                     этот мегаполис, построенный на нефти и за счет нефти
                   </p>
                 </article>
@@ -93,18 +105,19 @@
             </ul>
           </div>
           <div class="main-slider__btn-block">
-            <button class="slider-btn__btn js-btn-prev" type="button">
+            <button class="main-slider__btn js-btn-prev" type="button">
               <svg width="27" height="27">
                 <use xlink:href="#icon-triangle"></use>
               </svg>
             </button>
-            <button class="slider-btn__btn js-btn-next" type="button">
+            <button class="main-slider__btn js-btn-next" type="button">
               <svg width="27" height="27">
                 <use xlink:href="#icon-triangle"></use>
               </svg>
             </button>
           </div>
           <div class="main-slider__prev-next-block"><span>Предыдущая</span><span>Следующая</span></div>
+          <div class="main-slider__pagination swiper-pagination"></div>
         </div>
       </section>
       <div class="container">
@@ -121,11 +134,12 @@
                   </p>
                 </div>
                 <ul class="news__list">
-                  <li class="news__item"><a class="news__link" href="#">
+                  <li class="news__item"><a class="news__link" href="#" aria-label="ссылка на новость">
                       <article class="news__article">
+                        <h3 class="visually-hidden">Заголовок новости</h3>
                         <div class="news__img-block">
                           <picture>
-                            <source srcset="img/news-2.webp 1x, img/news-2@2x.webp 2x" type="image/webp"><img class="main-scale__img" src="img/news-2.jpg" srcset="img/news-2@2x.jpg 2x" alt="Новость" width="127" height="271">
+                            <source srcset="img/news-2.webp 1x, img/news-2@2x.webp 2x" type="image/webp"><img src="img/news-2.jpg" srcset="img/news-2@2x.jpg 2x" alt="Новость" width="127" height="271">
                           </picture>
                         </div>
                         <div class="news__article-column">
@@ -133,11 +147,12 @@
                           <p class="news__text">10 сентября в 15:00 был открыт памятник писателю</p>
                         </div>
                       </article></a></li>
-                  <li class="news__item"><a class="news__link news__link--active" href="#">
+                  <li class="news__item"><a class="news__link news__link--active" href="#" aria-label="ссылка на новость">
                       <article class="news__article">
+                        <h3 class="visually-hidden">Заголовок новости</h3>
                         <div class="news__img-block">
                           <picture>
-                            <source srcset="img/news-3.webp 1x, img/news-3@2x.webp 2x" type="image/webp"><img class="main-scale__img" src="img/news-3.jpg" srcset="img/news-3@2x.jpg 2x" alt="Новость" width="312" height="168">
+                            <source srcset="img/news-3.webp 1x, img/news-3@2x.webp 2x" type="image/webp"><img src="img/news-3.jpg" srcset="img/news-3@2x.jpg 2x" alt="Новость" width="312" height="168">
                           </picture>
                         </div>
                         <div class="news__article-column">
@@ -145,11 +160,12 @@
                           <p class="news__text">Русские писатели говорят о важности искусства</p>
                         </div>
                       </article></a></li>
-                  <li class="news__item"><a class="news__link" href="#">
+                  <li class="news__item"><a class="news__link" href="#" aria-label="ссылка на новость">
                       <article class="news__article">
+                        <h3 class="visually-hidden">Заголовок новости</h3>
                         <div class="news__img-block">
                           <picture>
-                            <source srcset="img/news-4.webp 1x, img/news-4@2x.webp 2x" type="image/webp"><img class="main-scale__img" src="img/news-4.jpg" srcset="img/news-4@2x.jpg 2x" alt="Новость" width="192" height="91">
+                            <source srcset="img/news-4.webp 1x, img/news-4@2x.webp 2x" type="image/webp"><img src="img/news-4.jpg" srcset="img/news-4@2x.jpg 2x" alt="Новость" width="192" height="91">
                           </picture>
                         </div>
                         <div class="news__article-column">
@@ -163,11 +179,12 @@
             <section class="reviews">
               <h2 class="reviews__caption h2">Обзоры</h2>
               <ul class="reviews__list">
-                <li class="reviews__item"><a class="reviews__link" href="">
+                <li class="reviews__item"><a class="reviews__link" href="#" aria-label="ссылка на новость">
                     <article class="reviews__article">
+                      <h3 class="visually-hidden">Заголовок новости</h3>
                       <div class="reviews__img-block">
                         <picture>
-                          <source srcset="img/reviews-1.webp 1x, img/reviews-1@2x.webp 2x" type="image/webp"><img class="main-scale__img" src="img/reviews-1.jpg" srcset="img/reviews-1@2x.jpg 2x" alt="Обзор" width="370" height="455">
+                          <source srcset="img/reviews-1.webp 1x, img/reviews-1@2x.webp 2x" type="image/webp"><img src="img/reviews-1.jpg" srcset="img/reviews-1@2x.jpg 2x" alt="Обзор" width="370" height="455">
                         </picture>
                         <ul class="reviews__social-list">
                           <li class="reviews__social-item">
@@ -189,11 +206,12 @@
                         «Шальные годы Монпарнаса»
                       </p>
                     </article></a></li>
-                <li class="reviews__item"><a class="reviews__link reviews__link--active" href="">
+                <li class="reviews__item"><a class="reviews__link reviews__link--active" href="#" aria-label="ссылка на новость">
                     <article class="reviews__article">
+                      <h3 class="visually-hidden">Заголовок новости</h3>
                       <div class="reviews__img-block">
                         <picture>
-                          <source srcset="img/reviews-2.webp 1x, img/reviews-2@2x.webp 2x" type="image/webp"><img class="main-scale__img" src="img/reviews-2.jpg" srcset="img/reviews-2@2x.jpg 2x" alt="Обзор" width="371" height="203">
+                          <source srcset="img/reviews-2.webp 1x, img/reviews-2@2x.webp 2x" type="image/webp"><img src="img/reviews-2.jpg" srcset="img/reviews-2@2x.jpg 2x" alt="Обзор" width="371" height="203">
                         </picture>
                         <ul class="reviews__social-list">
                           <li class="reviews__social-item">
@@ -215,11 +233,12 @@
                         интерес к&nbsp;научно&nbsp;-&nbsp;популярной литературе заметно вырос
                       </p>
                     </article></a></li>
-                <li class="reviews__item"><a class="reviews__link" href="">
+                <li class="reviews__item"><a class="reviews__link" href="#" aria-label="ссылка на новость">
                     <article class="reviews__article">
+                      <h3 class="visually-hidden">Заголовок новости</h3>
                       <div class="reviews__img-block">
                         <picture>
-                          <source srcset="img/reviews-3.webp 1x, img/reviews-3@2x.webp 2x" type="image/webp"><img class="main-scale__img" src="img/reviews-3.jpg" srcset="img/reviews3@2x.jpg 2x" alt="Обзор" width="374" height="303">
+                          <source srcset="img/reviews-3.webp 1x, img/reviews-3@2x.webp 2x" type="image/webp"><img src="img/reviews-3.jpg" srcset="img/reviews3@2x.jpg 2x" alt="Обзор" width="374" height="303">
                         </picture>
                         <ul class="reviews__social-list">
                           <li class="reviews__social-item">
@@ -240,11 +259,12 @@
                         культурно&nbsp;-&nbsp;развлекательный спектакль, который покажут в новом театре
                       </p>
                     </article></a></li>
-                <li class="reviews__item"><a class="reviews__link" href="">
+                <li class="reviews__item"><a class="reviews__link" href="#" aria-label="ссылка на новость">
                     <article class="reviews__article">
+                      <h3 class="visually-hidden">Заголовок новости</h3>
                       <div class="reviews__img-block">
                         <picture>
-                          <source srcset="img/reviews-4.webp 1x, img/reviews-4@2x.webp 2x" type="image/webp"><img class="main-scale__img" src="img/reviews-4.jpg" srcset="img/reviews4@2x.jpg 2x" alt="Обзор" width="374" height="303">
+                          <source srcset="img/reviews-4.webp 1x, img/reviews-4@2x.webp 2x" type="image/webp"><img src="img/reviews-4.jpg" srcset="img/reviews4@2x.jpg 2x" alt="Обзор" width="374" height="303">
                         </picture>
                         <ul class="reviews__social-list">
                           <li class="reviews__social-item">
@@ -268,62 +288,71 @@
                     </article></a></li>
               </ul>
             </section>
-            <div class="number"><a class="number__btn" href="#"></a>
-              <div class="number__list"><a class="number__item number__item--active" href="#">1</a><a class="number__item" href="#">2</a><a class="number__item" href="#">3</a><a class="number__item" href="#">4</a><a class="number__item" href="#">5</a><a class="number__item number__item--point" href="#">...</a><a class="number__item" href="#">35</a></div><a class="number__btn" href="#"></a>
+            <div class="number"><a class="number__btn" href="#" aria-label="страница новостей назад"></a>
+              <div class="number__list"><a class="number__item number__item--active" href="#">1</a><a class="number__item" href="#">2</a><a class="number__item" href="#">3</a><a class="number__item number__item--mobile-hover" href="#">4</a><a class="number__item number__item--mobile-hover" href="#">5</a><a class="number__item number__item--point" href="#">...</a><a class="number__item" href="#">35</a></div><a class="number__btn" href="#" aria-label="страница новостей вперед"></a>
             </div>
-            <section class="article"><a class="article__link article__link--ballet" href="#">
+            <section class="article">
+              <h2 class="visually-hidden">Заголовок новостей</h2><a class="article__link article__link--ballet" href="#" aria-label="ссылка на новость">
                 <article class="article__block article__block--ballet">
+                  <h3 class="visually-hidden">Заголовок новости</h3>
                   <p class="article__caption article__caption--ballet">Ох, уж этот балет</p><span class="article__btn btn">Смотреть
                     <svg width="16" height="16">
                       <use xlink:href="#icon-arrow"></use>
                     </svg></span>
-                </article></a></section>
+                </article></a>
+            </section>
           </div>
           <section class="slider-news slider">
             <h2 class="visually-hidden">главный слайдер</h2>
             <div class="slider-news__container swiper-container">
               <div class="slider-news__wrapper swiper-wrapper">
-                <div class="slider-news__item swiper-slide" style="background-image: url('img/slider-1.jpg');">
+                <div class="slider-news__item swiper-slide" style="background-image: url('img/slider-1.webp');">
                   <p class="slider-news__caption">КАК все успевать</p><a class="slider-news__btn btn" href="#">Подробнее</a>
                 </div>
-                <div class="slider-news__item swiper-slide" style="background-image: url('img/slider-2.jpg');">
+                <div class="slider-news__item swiper-slide" style="background-image: url('img/slider-2.webp');">
                   <p class="slider-news__caption">КАК все успевать</p><a class="slider-news__btn btn" href="#">Подробнее</a>
                 </div>
-                <div class="slider-news__item swiper-slide" style="background-image: url('img/slider-3.jpg');">
+                <div class="slider-news__item swiper-slide" style="background-image: url('img/slider-3.webp');">
                   <p class="slider-news__caption">КАК все успевать</p><a class="slider-news__btn btn" href="#">Подробнее</a>
                 </div>
-                <div class="slider-news__item swiper-slide" style="background-image: url('img/slider-4.jpg');">
+                <div class="slider-news__item swiper-slide" style="background-image: url('img/slider-4.webp');">
                   <p class="slider-news__caption">КАК все успевать</p><a class="slider-news__btn btn" href="#">Подробнее</a>
                 </div>
               </div>
             </div>
             <button class="slider-news__btn-slide js-btn-next" type="button"><span></span></button>
             <button class="slider-news__btn-slide js-btn-prev" type="button"><span></span></button>
+            <div class="slider-news__pagination swiper-pagination"></div>
           </section>
-          <section class="article"><a class="article__link" href="#">
+          <section class="article">
+            <h2 class="visually-hidden">Заголовок новостей</h2><a class="article__link" href="#" aria-label="ссылка на новость">
               <article class="article__block article__block--ball">
+                <h3 class="visually-hidden">Заголовок новости</h3>
                 <p class="article__caption">Воздушные<br>шары</p><span class="article__btn btn">Смотреть
                   <svg width="16" height="16">
                     <use xlink:href="#icon-arrow"></use>
                   </svg></span>
-              </article></a><a class="article__link" href="#">
+              </article></a><a class="article__link" href="#" aria-label="ссылка на новость">
               <article class="article__block article__block--photo">
+                <h3 class="visually-hidden">Заголовок новости</h3>
                 <p class="article__caption article__caption--white">Необычная<br>фотосессия</p><span class="article__btn btn">Смотреть
                   <svg width="16" height="16">
                     <use xlink:href="#icon-arrow"></use>
                   </svg></span>
-              </article></a><a class="article__link" href="#">
+              </article></a><a class="article__link" href="#" aria-label="ссылка на новость">
               <article class="article__block article__block--bird">
+                <h3 class="visually-hidden">Заголовок новости</h3>
                 <p class="article__caption article__caption--white">Выставка<br>птиц</p><span class="article__btn btn">Смотреть
                   <svg width="16" height="16">
                     <use xlink:href="#icon-arrow"></use>
                   </svg></span>
-              </article></a></section>
+              </article></a>
+          </section>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="container hidden--mobile">
+      <div class="container hidden-mobile">
         <h2 class="footer__caption">Новости культуры</h2>
         <nav class="nav nav--inactive js-nav-header">
           <ul class="nav__list">

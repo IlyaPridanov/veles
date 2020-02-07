@@ -182,7 +182,29 @@
 }
 
 @media(max-width:700px) {
+    .news {
+        margin-bottom: 50px;
+    }
+
+    .news__article {
+        grid-template-columns: 132px auto;
+    }
+
     .news__row {
         display: block;
+    }
+
+    .news__column {
+        margin-bottom: 25px;
+        min-height: 335px;
+        padding: 21px 37px 21px 17px;
+    }
+
+    .news__column-caption {
+        margin-bottom: 13px;
+    }
+
+    .news__item {
+        margin-bottom: 31px;
     }
 }

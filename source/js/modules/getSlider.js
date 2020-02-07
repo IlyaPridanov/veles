@@ -3,7 +3,6 @@
 (function () {
   var sliderContainers = document.querySelectorAll('.slider');
 
-  // eslint-disable-next-line consistent-return
   var getPhotoSlider = function (slider) {
     if (slider) {
       var container = slider.querySelector('.swiper-container');
@@ -11,9 +10,11 @@
       var prev = slider.querySelector('.js-btn-prev');
       var pagination = slider.querySelector('.swiper-pagination');
       var slidesPerView = 1;
+      var slidesPerView600 = 1;
       var spaceBetween = 0;
       if (slider.classList.contains('slider-news')) {
         slidesPerView = 4;
+        slidesPerView600 = 2;
         spaceBetween = 30;
       }
       return new window.Swiper(container, {
@@ -22,7 +23,6 @@
           nextEl: next,
           prevEl: prev,
         },
-        // updateOnWindowResize: false,
         pagination: {
           el: pagination,
           clickable: true,
@@ -32,7 +32,11 @@
             slidesPerView: 1,
             spaceBetween: spaceBetween,
           },
-          901: {
+          600: {
+            slidesPerView: slidesPerView600,
+            spaceBetween: spaceBetween,
+          },
+          1000: {
             slidesPerView: slidesPerView,
             spaceBetween: spaceBetween,
           },

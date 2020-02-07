@@ -31,9 +31,14 @@
     text-align: right;
 }
 
-@media(max-width:1000px) {
+@media(max-width:1200px) {
     .footer {
         margin-top: 25px;
+    }
+}
+
+@media(max-width:1000px) {
+    .footer {
         & nav {
             display: none;
         }
@@ -45,5 +50,11 @@
 
     .footer__text {
         text-align: center;
+    }
+}
+
+@media(max-width:$tablet-width) {
+    .footer {
+        margin-top: 0;
     }
 }

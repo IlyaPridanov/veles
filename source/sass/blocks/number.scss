@@ -112,3 +112,46 @@
         }
     }
 }
+
+@media(max-width:$tablet-width) {
+    .number {
+        margin-bottom: 19px;
+    }
+
+    .number__btn {
+        border-right: 11px solid $black-ultra-light-opacity;
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .number__list {
+        margin: 0 7px;
+    }
+
+    .number__item {
+        font-size: 20px;
+        margin: 0 2px;
+        padding: 7px 14px;
+        border: 1px solid transparent;
+
+        &--active {
+            font-size: 20px;
+            line-height: 1.2;
+            opacity: 1;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &--mobile-hover {
+            display: none;
+        }
+    }
+}
